@@ -1,0 +1,92 @@
+Introduction
+-------------------------------
+
+This script imports basic navigation and HTML data from an existing FarCry database into a Mura one.
+
+
+Requirements
+-------------------------------
+
+This was built on
+
+    Railo 3.2+
+    ColdFusion 7+
+    FarCry 6+
+    Mura 5.4+
+    MySQL 5+
+
+Not sure about FarCry 5, you should be ok as I don't think the v6 schema changes will effect this script
+
+To make things easier, session management must enabled
+
+
+Installation
+-------------------------------
+
+Probably easiest to put this folder (farcrytomura) in the webroot of an existing project/vhost, then call it from http://www.yourproject.com/farcrytomura/
+
+If you want, you can setup a project/vhost specifically for this, but it's not necessary.
+
+This script has its own Application.cfc to avoid scope conflict
+
+Caveat - the ColdFusion/Railo server (instance/context) that you run this from needs to have BOTH dsn's (the FarCry and Mura ones) in the cf admin
+
+
+FarCry content types
+-------------------------------
+
+Currently we examine the FarCry navigation tree and bring across the entire structure underneath 'Root' (i.e. any nLevel 2+ nodes)
+
+If people want it, we can extend the functionality to import from a specific node, e.g. from 'Home'. This would be handy if your FarCry site has secondary/utility navigation etc that you want imported separately.
+
+Although all navigation nodes will be created in Mura, the only actual content that is imported is dmHTML, we ignore:
+
+    dmInclude
+    dmLink
+    Anything but the first content object under a navigation node
+    dmNews, dmEvent or any other "dynamic" content type
+    Custom tree content types
+
+Basically we import all navigation nodes under the site tab, from "Root" down, including the HTML content.
+
+
+FarCry homepage content
+-------------------------------
+
+Currently we ignore the farcry homepage content because we assume there is at least a "home" page in Mura. This is a TODO
+
+
+SES URLs
+-------------------------------
+
+Mura ses url's are created on import based off the title of the page from FarCry. This should be the default behaviour as if you were created a page from within Mura admin.
+
+Currently we're NOT importing the FarCry friendly URL into Mura.
+
+
+Rolling back
+-------------------------------
+
+
+
+
+
+
+
+
+
+
+
+If you want to rollback the import, you'll need to:
+
+DELETE FROM tcontent WHERE siteID = '[yoursite]' AND lastUpdateBy = 'farcrytomura'
+
+
+TODOs
+-------------------------------
+
+    Ability to select the page template from Mura
+    When previewing the Mura navigation tree, indent properly
+    Import the FarCry "home" page content
+    Handle farcry secondary/utility nav's (anything else at the same level as "home")
+    Fix sortorder on sub items, they work fine but not as neat as they could be
