@@ -1,0 +1,70 @@
+/*  ---------------------------------------------------------------------------- Reset */
+html, body, fieldset{ margin:0; padding:0; }
+body { line-height:1em; }
+ol, ul { list-style:none; margin:0; padding: 0px; }
+table { border-collapse:separate; border-spacing:0; }
+a img, fieldset{border:none;}
+
+
+/*  ---------------------------------------------------------------------------- Base */
+html{overflow-y:scroll;height:100%;}
+body{font: 12px/normal Verdana, Arial, Helvetica, sans-serif; padding: 10px;}
+a{color:#709DE7;text-decoration:none;}
+a:hover, a:active {color:#668fd1;text-decoration:none;}
+h1 { font-size:1.5em; margin:1em 0 0.5em; border-bottom: 1px solid #ccc; font-weight: normal; padding-bottom: 5px;}
+h2 { font-size:1.2em; margin:1em 0 0.5em; }
+h3 { font-size:1.1em; margin:1em 0 0.5em; font-weight: normal;}
+h4 { font-size:1em; margin:1em 0 0.5em;}
+p {margin: 12px 0;}
+em { font-style:italic; }
+strong { font-weight:bold; }
+
+#nav {display: inline; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
+#nav li {padding: 0 10px; display: inline; border-right: 1px solid #ccc; color: #333;}
+#nav li:last-child {border: none;}
+
+#step {margin-top: 30px;}
+
+fieldset {overflow: hidden;}
+legend {border-bottom: 1px solid #ccc; font-weight: normal; padding-bottom: 5px; width: 100%;}
+.break {border-bottom: 1px solid #ccc; width: 100%; height: 1px; margin: 15px 0;}
+.help h4 {margin-top: 20px;}
+
+ul {margin: .3em 0 1.5em 0;list-style-type:none}
+ol {margin: .5em .5em 1.5em}
+ol li {margin-left: 1.4em;padding-left: 0;background: none; list-style-type: decimal}
+li {line-height: 1.3;padding-left: 18px;background: none; list-style-type: none;}
+
+li.ignored {color: #ff0000; text-decoration: line-through;}
+
+#footer {margin-top: 50px;}
+#footer ul {border-top: 1px solid #ccc; padding-top: 10px;}
+#footer ul li {color: #aaa; display: inline; padding-right: 15px; }
+
+/* ALERT MESSAGES */
+.message-success {border: 2px solid #a0eda0;background: #e2ffe2 url("images/sprites_message.gif") no-repeat 15px 7px;padding: 10px;color:#007300;margin: 0 0 22px}
+.message-success * {margin: 0 0 0 60px;border-left: 2px solid #a0eda0;padding-left:20px;background:none}
+.message-success * * {margin: 0;border:none;padding-left:0;background:none}
+.message-success li {list-style-type:disc;margin-left:20px;line-height:1.6}
+	.pod .message-success {padding: 10px;background: #e2ffe2}
+	.pod .message-success * {border:none;padding:0;margin:0}
+
+.message-error {border: 2px solid #f0adad;background: #ffe3e3 url("images/sprites_message.gif") no-repeat 15px -293px;padding: 10px;color:#dd0000;margin: 20px 0 0 0;}
+.message-error a{text-decoration:underline;}
+.message-error * {margin: 0 0 0 60px;border-left: 2px solid #f0adad;padding-left:20px;background:none}
+.message-error * * {margin: 0;border:none;padding-left:0;background:none}
+.message-error ul li {background:none;}
+.message-error li {list-style-type:none;margin-left:0px;line-height:1.6;background:none;font-size:90%}
+.message-error .close a {border: 2px solid #f0adad;background:#fff;padding:3px 6px;color:#dd0000}
+.message-error .close a:hover {border: 2px solid #dd0000;background:#dd0000;color:#fff;padding:3px 6px}
+	.pod .message-error {padding: 10px;background: #ffe3e3}
+	.pod .message-error * {border:none;padding:0;margin:0}
+
+.message-alert {border: 2px solid #ecdc93;background: #fffae3 url("images/sprites_message.gif") no-repeat 15px -593px;padding: 10px;color:#e26500;margin: 0 0 22px}
+.message-alert * {margin: 0 0 0 60px;border-left: 2px solid #ecdc93;padding-left:20px;background:none}
+.message-alert * * {margin: 0;border:none;padding-left:0;background:none}
+.message-alert li {list-style-type:disc;margin-left:20px;line-height:1.6}
+.message-alert .close a {border: 2px solid #ecdc93;background:#fff;padding:3px 6px;color:#e26500}
+.message-alert .close a:hover {border: 2px solid #e26500;background:#e26500;color:#fff;padding:3px 6px}
+	.pod .message-alert {padding: 10px;background: #fffae3}
+	.pod .message-alert * {border:none;padding:0;margin:0}
