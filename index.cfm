@@ -204,11 +204,11 @@
 				<p>This was built on</p>
 				<ul>
 					<li>Railo 3.2+</li>
+					<li>ColdFusion 7+</li>
 					<li>FarCry 6+</li>
 					<li>Mura 5.4+</li>
 					<li>MySQL 5+</li>				
 				</ul>
-				<p>In reality this *should* work on CF7+</p>
 				<p>Not sure about FarCry 5, you should be ok as I don't think the v6 schema changes will effect this script</p>
 				<p>To make things easier, session management must enabled</p>
 				

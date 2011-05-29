@@ -67,7 +67,6 @@ Currently we're NOT importing the FarCry friendly URL into Mura.
 Rolling back
 -------------------------------
 
-
 If you want to rollback the import, you'll need to:
 
 DELETE FROM tcontent WHERE siteID = '[yoursite]' AND lastUpdateBy = 'farcrytomura'
