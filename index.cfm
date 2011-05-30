@@ -243,7 +243,7 @@
 				
 				<h4>Rolling back</h4>
 				<p>If you want to rollback the import, you'll need to:</p>
-				<p><pre>DELETE FROM tcontent WHERE siteID = '[yoursite]' AND lastUpdateBy = 'farcrytomura'</pre></p>
+				<p><pre>DELETE FROM tcontent WHERE siteID = '[yoursite]' AND RemoteID = 'farcrytomura'</pre></p>
 				
 				<div class="break"></div>
 				

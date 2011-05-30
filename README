@@ -69,7 +69,7 @@ Rolling back
 
 If you want to rollback the import, you'll need to:
 
-DELETE FROM tcontent WHERE siteID = '[yoursite]' AND lastUpdateBy = 'farcrytomura'
+DELETE FROM tcontent WHERE siteID = '[yoursite]' AND RemoteID = 'farcrytomura'
 
 
 TODOs
