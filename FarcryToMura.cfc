@@ -150,6 +150,7 @@
 						ParentID,
 						ContentID,
 						ContentHistID,
+						RemoteID,
 						TYPE,
 						subType,
 						Active,
@@ -162,7 +163,6 @@
 						MetaKeyWords,
 						Body,
 						lastUpdate,
-						lastUpdateBy,
 						Display,
 						Approved,
 						IsNav,
@@ -192,6 +192,7 @@
 						'#dbParentID#',				<!--- ParentID --->
 						'#dbContentID#',			<!--- ContentID --->
 						'#createUUID()#',			<!--- ContentHistID --->
+						'farcrytomura',				<!--- RemoteID (Obviously not a real Mura user, but good as an indication of where the record(s) came from) --->
 						'Page',					<!--- TYPE --->
 						'Default',					<!--- subType --->
 						1,						<!--- Active --->
@@ -204,7 +205,6 @@
 						'#qFC.metaKeywords#',		<!--- MetaKeyWords --->
 						'#qFC.body#',				<!--- Body --->
 						#dbDateNow#,				<!--- lastUpdate --->
-						'farcrytomura',				<!--- lastUpdateBy (Obviously not a real Mura user, but good as an indication of where the record(s) came from) --->
 						1,						<!--- Display --->
 						1,						<!--- Approved --->
 						1,						<!--- IsNav --->
