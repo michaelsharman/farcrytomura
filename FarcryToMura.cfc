@@ -6,18 +6,7 @@
 	Last Updated		: May 26, 2011
 	History			: Initial release (mps 26/05/2011)
 	Purpose			: Imports basic dmHTML data from FarCry into Mura
-	Requirements		: Was built on 
-							Railo 3.2+
-							FarCry 6+
-							Mura 5.4+
-							MySQL 5+
-						In reality this *should* work on CF7+
-						Not sure about FarCry 5, you should be ok as I don't think the v6 schema changes will effect this script
-						To make things easier, session management should enabled
-	Installation		: Probably easiest to put this folder (farcrytomura) in the webroot of an existing project,
-						then call it from http://www.yourproject.com/farcrytomura/
-						If you want, you can setup a vhost specifically for this, but it's not necessary.
-						Caveat - the instance/context that you run this from needs to have BOTH dsn's (the FarCry and Mura ones) in the cf admin
+	Documentation		: See the github page (https://github.com/michaelsharman/farcrytomura/) or the local help page (index.cfm?step=help)
  --->
 
 	
